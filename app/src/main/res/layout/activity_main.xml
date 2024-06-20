@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/realstamp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/TitleRETEOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Real to Euro or Dolar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="R$">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_real"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:inputType="number|numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switch_dolar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Dolar" />
+
+        <TextView
+            android:id="@+id/euro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Euro" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculating_button"
+        android:layout_width="163dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="50dp"
+        android:text="Converter" />
+
+    <TextView
+        android:id="@+id/output_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="356dp"
+        android:layout_height="76dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</LinearLayout>
