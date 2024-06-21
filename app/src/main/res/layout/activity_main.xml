@@ -5,6 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/moneywallpaper"
+    android:backgroundTint="#8FFFFFFF"
+    android:backgroundTintMode="multiply"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -23,7 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/concert_one"
         android:text="Real to Euro or Dolar"
+        android:textColor="#000000"
+        android:textColorLink="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +51,8 @@
             android:layout_height="wrap_content"
             android:foregroundGravity="center"
             android:gravity="center"
-            android:inputType="number|numberDecimal" />
+            android:inputType="number|numberDecimal"
+            android:textColor="#000000" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,21 +66,27 @@
             android:id="@+id/switch_dolar"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Dolar" />
+            android:fontFamily="@font/concert_one"
+            android:text="Dolar"
+            android:textColor="#050505" />
 
         <TextView
             android:id="@+id/euro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Euro" />
+            android:fontFamily="@font/concert_one"
+            android:text="Euro"
+            android:textColor="#000000" />
     </LinearLayout>
 
     <Button
         android:id="@+id/calculating_button"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
         android:layout_width="163dp"
         android:layout_height="65dp"
         android:layout_marginTop="50dp"
+        android:fontFamily="@font/concert_one"
         android:text="Converter" />
 
     <TextView
